@@ -64,17 +64,16 @@ class CountdownTimer{
     
 }
 
-refs.date.addEventListener('input', setDate)
-refs.stop.addEventListener('click', ()=>{
-    alert(timer) 
+refs.date.addEventListener('change', setDate)
+refs.stop.addEventListener('click', ()=>{ 
     if(timer)
     {timer.stop()}
 })
 
 let timer
 function setDate(evt){
-    alert(timer)
-    alert(date)
+    // alert(timer)
+    // alert(date)
     if(timer){
         console.log('stop');
         timer.stop()
